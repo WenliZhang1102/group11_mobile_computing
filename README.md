@@ -21,7 +21,7 @@ Backend: http://develop.vuejs.se/api
 
 ```bash
 # Clone repository
-git clone git@git.
+git clone git@github.com:WenliZhang1102/group11_mobile_computing.git
 
 # Change into the directory
 cd platform
