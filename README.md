@@ -3,28 +3,31 @@ This app is used for reducing your food waste by generating your own wasteless m
 
 It comprises of a frontend and a backend app. The frontend app is based on the VueJS framework, while the backend is a REST API based on the Express.js framework.
 
-## Environments
-### Production
-Frontend: http://vuejs.se
+# Backend and Frontend Template
 
-Backend: http://vuejs.se/api
+## Requirements
 
-### Stage
-Frontend: http://develop.vuejs.se
+You can also use alternative tools if you know how to configure them (e.g., Firefox instead of Chrome).
 
-Backend: http://develop.vuejs.se/api
-
-## Getting started
-### Requirements
+  * [Setup SSH key with Github]
+    * Create an SSH key pair `ssh-keygen -t ed25519 -C "email@example.com"` (skip if you already have one)
+    * Add your public SSH key to your Github profile.
+* [Git](https://git-scm.com/) (v2) => [installation instructions](https://www.atlassian.com/git/tutorials/install-git)
+  * [Add your Git username and set your email]
+    * `git config --global user.name "YOUR_USERNAME"` => check `git config --global user.name`
+    * `git config --global user.email "email@example.com"` => check `git config --global user.email`
+  * > **Windows users**: We recommend to use the [Git Bash](https://www.atlassian.com/git/tutorials/git-bash) shell from your Git installation or the Bash shell from the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to run all shell commands for this project.
 * [Backend Requirements](./backend/README.md#Requirements)
 * [Frontend Requirements](./frontend/README.md#Requirements)
+
+## Getting started
 
 ```bash
 # Clone repository
 git clone git@github.com:WenliZhang1102/group11_mobile_computing.git
 
 # Change into the directory
-cd platform
+cd group11_mobile_computing
 
 # Setup backend
 cd backend && npm install
@@ -35,19 +38,6 @@ cd frontend && npm install
 npm run serve
 ```
 
-## Way of Working
-### Implementing an issue
-The issues (e.g. user stories) to be implemented for the active sprint are listed in the **Sprint** column in the [Kanban Board](https://git.chalmers.se/courses/eda397/2021/team-5-operator-app/-/boards). Follow the guidelines below in order to implement an issue:
-- The issues are listed based on their priority so start always with the top most issue in the **Sprint** column
-- Move the issue to the **In Progress** column, and click on the issue to open it
-- Assign the issue to yourself by cliking on the **assign-yourself** link in the menu to the right
-- Create a branch for the issue by clicking on the green dropdown button and choosing **Create Branch**, and then clicking on the green **Create Branch** button. Note that the source branch must always be **develop**, so don't change it
-- You can now checkout the branch in your dev environment using Git and start coding
-- As soon as you push code to the Git repo, the CI/CD pipeline will build and deploy your changes. You can find the deployed version of your branch under [Operations -> Environments](https://git.chalmers.se/courses/eda397/2021/team-5-operator-app/-/environments) in the left menu
-- Once you are done implementing the issue and pushed everything to the Git repo, check that the CI/CD pipeline successfully passes for your issue in the left menu [CI/CD -> Pipelines](https://git.chalmers.se/courses/eda397/2021/team-5-operator-app/-/pipelines)
-- If the CI/CD pipeline passes, create a Merge Request for your issue. Note that the target branch for the merge branch should always be **develop**, so don't change it
-- Now that you are done implementing the issue, someone else in the team needs to review and test it, so unassign yourself from the issue and move the issue to the **Review/Test** column 
-- Done
+## Visual Studio Code (VSCode)
 
-### Reviewing an issue
-Todo
+Open the `backend` and `frontend` in separate VSCode workspaces or open the combined [backend-frontend.code-workspace](./backend-frontend.code-workspace). Otherwise, workspace-specific settings don't work properly.
