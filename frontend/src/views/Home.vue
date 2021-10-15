@@ -35,6 +35,7 @@
             >
               Salt
             </b-form-checkbox>
+            <checkbox>pepper</checkbox> <!--Doesnt work??-->
           </div>
         </b-card-body>
       </b-collapse>
@@ -105,6 +106,15 @@
         </b-card-body>
       </b-collapse>
     </b-card>
+
+    <b-row class="my-1">
+    <b-col sm="2">
+      <label for="input-small"></label>
+    </b-col>
+    <b-col sm="10">
+      <b-form-input id="input-small" size="sm" placeholder="Add ingredient"></b-form-input>
+    </b-col>
+  </b-row>
 
   </div>
   </div>
