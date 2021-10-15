@@ -30,7 +30,7 @@
             <b-form-checkbox id="cb1-2">Pepper</b-form-checkbox>
             <b-form-checkbox id="cb1-3">Oregano</b-form-checkbox>
             <b-form-checkbox id="cb1-4">Pasta</b-form-checkbox>
-            <!--<checkbox :checkbox-number="checkbox2" item="pepper"></checkbox> <!--Doesnt work??-->
+            <!--<checkbox :checkbox-number="checkbox2" item="pepper"></checkbox> Doesnt work??-->
           </div>
         </b-card-body>
       </b-collapse>
