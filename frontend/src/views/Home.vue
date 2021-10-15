@@ -26,16 +26,11 @@
         <b-card-body>
           <b-card-text>{{ text }}</b-card-text>
           <div>
-            <b-form-checkbox
-              id="checkbox-1"
-              v-model="status"
-              name="checkbox-1"
-              value="accepted"
-              unchecked-value="not_accepted"
-            >
-              Salt
-            </b-form-checkbox>
-            <checkbox>pepper</checkbox> <!--Doesnt work??-->
+            <b-form-checkbox id="cb1-1">Salt</b-form-checkbox>
+            <b-form-checkbox id="cb1-2">Pepper</b-form-checkbox>
+            <b-form-checkbox id="cb1-3">Oregano</b-form-checkbox>
+            <b-form-checkbox id="cb1-4">Pasta</b-form-checkbox>
+            <!--<checkbox :checkbox-number="checkbox2" item="pepper"></checkbox> <!--Doesnt work??-->
           </div>
         </b-card-body>
       </b-collapse>
@@ -48,6 +43,12 @@
       <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <b-card-text>{{ text }}</b-card-text>
+          <div>
+            <b-form-checkbox id="cb2-1">Eggs</b-form-checkbox>
+            <b-form-checkbox id="cb2-2">Cheese</b-form-checkbox>
+            <b-form-checkbox id="cb2-3">Yoghurt</b-form-checkbox>
+            <b-form-checkbox id="cb2-4">Milk</b-form-checkbox>
+          </div>
         </b-card-body>
       </b-collapse>
     </b-card>
@@ -59,6 +60,13 @@
       <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <b-card-text>{{ text }}</b-card-text>
+          <div>
+            <b-form-checkbox id="cb3-1">Cucumber</b-form-checkbox>
+            <b-form-checkbox id="cb3-2">Apples</b-form-checkbox>
+            <b-form-checkbox id="cb3-3">bell pepper</b-form-checkbox>
+            <b-form-checkbox id="cb3-4">Banana</b-form-checkbox>
+            <b-form-checkbox id="cb3-5">Carrots</b-form-checkbox>
+          </div>
         </b-card-body>
       </b-collapse>
     </b-card>
@@ -70,6 +78,13 @@
       <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <b-card-text>{{ text }}</b-card-text>
+          <div>
+            <b-form-checkbox id="cb4-1">Wholegrain bread</b-form-checkbox>
+            <b-form-checkbox id="cb4-2">White bread</b-form-checkbox>
+            <b-form-checkbox id="cb4-3">Sour dough</b-form-checkbox>
+            <b-form-checkbox id="cb4-4">Brioche</b-form-checkbox>
+            <b-form-checkbox id="cb4-5">Flatbread</b-form-checkbox>
+          </div>
         </b-card-body>
       </b-collapse>
     </b-card>
@@ -81,6 +96,12 @@
       <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <b-card-text>{{ text }}</b-card-text>
+          <div>
+            <b-form-checkbox id="cb5-1">Vegetable mix</b-form-checkbox>
+            <b-form-checkbox id="cb5-2">Peas</b-form-checkbox>
+            <b-form-checkbox id="cb5-3">French fries</b-form-checkbox>
+            <b-form-checkbox id="cb5-4">Ice cream</b-form-checkbox>
+          </div>
         </b-card-body>
       </b-collapse>
     </b-card>
@@ -91,7 +112,11 @@
       </b-card-header>
       <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
         <b-card-body>
-          <b-card-text>{{ text }}</b-card-text>
+          <div>
+            <b-form-checkbox id="cb6-1">Pepsi Max</b-form-checkbox>
+            <b-form-checkbox id="cb6-2">Battery acid</b-form-checkbox>
+            <b-form-checkbox id="cb6-3">Orange juice</b-form-checkbox>
+          </div>
         </b-card-body>
       </b-collapse>
     </b-card>
@@ -145,9 +170,6 @@ export default {
           this.message = error
         })
     }
-  },
-  components: {
-    Checkbox
   }
 }
 </script>

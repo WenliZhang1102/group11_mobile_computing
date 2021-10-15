@@ -1,16 +1,16 @@
 <template>
   <div>
     <b-form-checkbox
-      id="checkbox-2"
+      :id="checkboxNumber"
       v-model="status"
-      name="checkbox-2"
+      :name="props[2]"
       value="accepted"
       unchecked-value="not_accepted"
     >
-      I accept the terms and use
     </b-form-checkbox>
-
+    <p>{{item}}</p>
     <div>
+      <p>{{item}}</p>
       State: <strong>{{ status }}</strong>
     </div>
   </div>
@@ -21,7 +21,11 @@ export default {
   name: 'checkbox',
   data() {
     return {
-      status: 'not_accepted'
+      status: 'not_accepted',
+      props: {
+        checkboxNumber: String,
+        item: String
+      }
     }
   }
 }
