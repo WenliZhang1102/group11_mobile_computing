@@ -16,6 +16,7 @@
         </div>
     </b-container> -->
 
+    <b-card-text class="heading">My ingredients</b-card-text>
     <div class="accordion" role="tablist">
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
@@ -23,7 +24,6 @@
       </b-card-header>
       <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
         <b-card-body>
-          <b-card-text>I start opened because <code>visible</code> is <code>true</code></b-card-text>
           <b-card-text>{{ text }}</b-card-text>
           <div>
             <b-form-checkbox
@@ -33,7 +33,7 @@
               value="accepted"
               unchecked-value="not_accepted"
             >
-              I accept the terms and use
+              Salt
             </b-form-checkbox>
           </div>
         </b-card-body>
