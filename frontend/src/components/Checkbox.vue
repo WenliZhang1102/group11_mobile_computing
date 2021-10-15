@@ -1,9 +1,9 @@
 <template>
   <div>
     <b-form-checkbox
-      id="checkbox-1"
+      id="checkbox-2"
       v-model="status"
-      name="checkbox-1"
+      name="checkbox-2"
       value="accepted"
       unchecked-value="not_accepted"
     >

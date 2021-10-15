@@ -121,6 +121,7 @@
 </template>
 
 <script>
+import Checkbox from '@/components/Checkbox.vue'
 // @ is an alias to /src
 import { Api } from '@/Api'
 
@@ -144,6 +145,9 @@ export default {
           this.message = error
         })
     }
+  },
+  components: {
+    Checkbox
   }
 }
 </script>
