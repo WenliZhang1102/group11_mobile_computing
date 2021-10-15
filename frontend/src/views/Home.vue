@@ -15,7 +15,7 @@
       <div>
         </div>
     </b-container> -->
-
+    <h2>WHAT INGREDIENTS DO YOU HAVE AT HOME?</h2>
     <b-card-text class="heading">My ingredients</b-card-text>
     <div class="accordion" role="tablist">
     <b-card no-body class="mb-1">
