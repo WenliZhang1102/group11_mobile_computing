@@ -8,11 +8,18 @@
                 <b-nav-item :active="status==='active3'" v-on:click="status='active3'">Preferences</b-nav-item>
             </b-nav>
         </div>
+
+        <mealplanscreen v-if="status === 'active1'"></mealplanscreen>
     </div>
 </template>
 
-<script lang="ts">
+<script>
+import mealplanscreen from '@/components/Mealplanscreen'
+
 export default {
+  components: {
+    mealplanscreen
+  },
   name: 'mealplan',
   data() {
     return {
