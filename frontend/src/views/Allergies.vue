@@ -18,12 +18,16 @@
                   buttons
               ></b-form-radio-group>
             </b-form-group>
+            <allergyoptions></allergyoptions>
     </div>
 </template>
 <script>
 import Switch from '@/components/Switch.vue'
+import allergyoptions from '@/components/Allergyoptions.vue'
+import Allergyoptions from '../components/Allergyoptions.vue'
 
 export default {
+  components: { Allergyoptions },
   name: 'allergies',
   data() {
     return {
@@ -39,7 +43,8 @@ export default {
     }
   },
   Components: {
-    Switch
+    Switch,
+    allergyoptions
   }
 }
 
