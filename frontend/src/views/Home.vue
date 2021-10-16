@@ -140,13 +140,16 @@
       <b-form-input id="input-small" size="sm" placeholder="Add ingredient"></b-form-input>
     </b-col>
   </b-row>
-
+  <switch>dasd</switch>
+  <checkbox></checkbox>
   </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import Switch from '@/components/Switch.vue'
+import Checkbox from '@/components/Checkbox.vue'
 import { Api } from '@/Api'
 
 export default {
@@ -169,6 +172,10 @@ export default {
           this.message = error
         })
     }
+  },
+  Components: {
+    Switch,
+    Checkbox
   }
 }
 </script>
