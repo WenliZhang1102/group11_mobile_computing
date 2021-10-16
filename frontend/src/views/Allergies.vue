@@ -18,7 +18,8 @@
                   buttons
               ></b-form-radio-group>
             </b-form-group>
-            <allergyoptions></allergyoptions>
+            <allergyoptions v-if="selected === 'yes'"></allergyoptions>
+            <p v-if="selected === 'yes'">+ Add allergies</p>
     </div>
 </template>
 <script>
@@ -33,6 +34,7 @@ export default {
     return {
       msg: 'something',
       selected: 'no',
+      isShow: false,
       options: [
         { text: 'No', value: 'no' },
         { text: 'Yes', value: 'yes' }
