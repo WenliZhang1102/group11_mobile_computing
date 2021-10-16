@@ -4,7 +4,7 @@
             <switch class="lmao"></switch>
             <switch :something="asd"></switch>
             <b-form-group
-            label="Button style radios with outline-primary variant and size lg"
+            label="We want to know about your food allergies so we can customize your meal plan"
             v-slot="{ ariaDescribedby }"
             >
               <b-form-radio-group
@@ -28,10 +28,10 @@ export default {
   data() {
     return {
       msg: 'something',
-      selected: 'radio1',
+      selected: 'no',
       options: [
-        { text: 'Radio 1', value: 'radio1' },
-        { text: 'Radio 3', value: 'radio2' }
+        { text: 'No', value: 'no' },
+        { text: 'Yes', value: 'yes' }
       ],
       props: {
         something: String
