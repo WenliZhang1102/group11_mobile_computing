@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Camels from './views/Camels.vue'
 import Diet from './views/Diet.vue'
 import Allergies from './views/Allergies.vue'
+import Mealplan from './views/Mealplan.vue'
 
 Vue.use(Router)
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/allergies',
       name: 'allergies',
       component: Allergies
+    },
+    {
+      path: '/mealplan',
+      name: 'mealplan',
+      component: Mealplan
     }
   ]
 })

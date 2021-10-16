@@ -4,7 +4,8 @@
       <router-link to="/">Home</router-link> |
       <!--<router-link to="/camels">Camels</router-link> |-->
       <router-link to="/diet">Diet</router-link> |
-      <router-link to="/allergies">Allergies</router-link>
+      <router-link to="/allergies">Allergies</router-link> |
+      <router-link to="/mealplan">Mealplan</router-link>
     </div>
     <router-view/>
   </div>
