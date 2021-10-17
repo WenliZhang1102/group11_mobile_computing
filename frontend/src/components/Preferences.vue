@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>Preferences component</h3>
+        <!-- <h3>Preferences component</h3> -->
         <dietoptions></dietoptions>
     </div>
 </template>
