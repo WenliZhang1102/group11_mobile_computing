@@ -9,6 +9,8 @@
             </b-nav>
         </div>
 
+        <div class="space"></div>
+
         <mealplanscreen v-if="status === 'active1'"></mealplanscreen>
         <grocerylist v-if="status === 'active2'"></grocerylist>
         <preferences v-if="status === 'active3'"></preferences>
@@ -35,3 +37,10 @@ export default {
 }
 
 </script>
+
+<style>
+.space{
+    height:40px;
+    width: 100%;
+}
+</style>

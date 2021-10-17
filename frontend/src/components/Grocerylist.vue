@@ -1,7 +1,6 @@
 <template>
     <div>
         <b-container class="bv-example-row">
-            <div class="space"></div>
             <b-row class="text-left" v-for="(x, index ) in groceries" :key="x.item">
                 <b-col>
                     <b-form-checkbox :id="index"></b-form-checkbox>
@@ -44,10 +43,6 @@ export default {
 
 b-form-checkbox {
     float: left;
-}
-.space{
-    height:40px;
-    width: 100%;
 }
 
 .line{
