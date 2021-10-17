@@ -50,6 +50,7 @@ export default {
       { id: 2, title: 'Item C', list: 2 }
     ])
     const getList = (list) => {
+      // eslint-disable-next-line eqeqeq
       return items.value.filter((item) => item.list == list)
     }
 
@@ -62,6 +63,7 @@ export default {
 
     const onDrop = (event, list) => {
       const itemID = event.dataTransfer.getData('itemID')
+      // eslint-disable-next-line eqeqeq
       const item = items.value.find((item) => item.id == itemID)
       item.list = list
     }
@@ -102,14 +104,14 @@ export default {
 .drop-zone {
     width: 50%;
     margin: 50px auto;
-    background-color: blueviolet;
+    background-color: rgb(93, 97, 45);
     padding: 10px;
     min-height: 10px;
 }
 
 .drag-el {
-    background-color: rgb(48, 25, 28);
-    color: rgb(192, 32, 32);
+    background-color: rgb(137, 138, 74);
+    color: rgb(255, 255, 255);
     padding: 5px;
     margin-bottom: 10px;
 }
