@@ -32,7 +32,6 @@
                 {{ item.title }}
             </div>
         </div>
-        <p>asd</p>
     </div>
 </template>
 

@@ -19,7 +19,6 @@
               ></b-form-radio-group>
             </b-form-group>
             <allergyoptions v-if="selected === 'yes'"></allergyoptions>
-            <p v-if="selected === 'yes'">+ Add allergies</p>
     </div>
 </template>
 <script>

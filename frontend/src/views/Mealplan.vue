@@ -11,8 +11,11 @@
 
         <div class="space"></div>
 
+        <!--Components for each view go here-->
         <mealplanscreen v-if="status === 'active1'"></mealplanscreen>
+
         <grocerylist v-if="status === 'active2'"></grocerylist>
+
         <preferences v-if="status === 'active3'"></preferences>
     </div>
 </template>

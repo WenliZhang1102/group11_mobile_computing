@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h3>WHAT ALLERGIES DO YOU HAVE?</h3>
         <b-button-group size="sm">
             <b-button
                 v-for="(btn, idx) in buttons"
@@ -10,6 +11,7 @@
                 {{ btn.caption }}
             </b-button>
         </b-button-group>
+        <p>+Add allergy</p>
     </div>
 </template>
 
