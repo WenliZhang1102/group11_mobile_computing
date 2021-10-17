@@ -40,7 +40,6 @@
 import Vue from 'vue'
 import VueCompositionAPI, { ref } from '@vue/composition-api'
 Vue.use(VueCompositionAPI)
-// import draggable from 'vuedraggable'
 
 export default {
   setup() {
@@ -95,6 +94,9 @@ export default {
       this.newIndex = evt.newIndex
     }
   }
+  // components: {
+  //   draggable
+  // }
 }
 
 </script>

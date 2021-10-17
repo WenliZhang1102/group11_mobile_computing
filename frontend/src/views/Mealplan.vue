@@ -10,15 +10,18 @@
         </div>
 
         <mealplanscreen v-if="status === 'active1'"></mealplanscreen>
+        <grocerylist v-if="status === 'active2'"></grocerylist>
     </div>
 </template>
 
 <script>
 import mealplanscreen from '@/components/Mealplanscreen'
+import grocerylist from '@/components/Grocerylist'
 
 export default {
   components: {
-    mealplanscreen
+    mealplanscreen,
+    grocerylist
   },
   name: 'mealplan',
   data() {
