@@ -12,7 +12,7 @@
         <div class="space"></div>
 
         <!--Components for each view go here-->
-        <mealplanscreen v-if="status === 'active1'"></mealplanscreen>
+        <mealplanscreens v-if="status === 'active1'"></mealplanscreens>
 
         <grocerylist v-if="status === 'active2'"></grocerylist>
 
@@ -21,15 +21,17 @@
 </template>
 
 <script>
-import mealplanscreen from '@/components/Mealplanscreen'
+// import mealplanscreen from '@/components/Mealplanscreen' //This is the drag and drop solution
 import grocerylist from '@/components/Grocerylist'
 import preferences from '@/components/Preferences'
+import mealplanscreens from '@/components/MealplanscreenS'
 
 export default {
   components: {
-    mealplanscreen,
+    // mealplanscreen,
     grocerylist,
-    preferences
+    preferences,
+    mealplanscreens
   },
   name: 'mealplan',
   data() {

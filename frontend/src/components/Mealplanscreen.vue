@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- <draggable v-model="myArray" ghost-class="ghost" @end="onEnd">
+         <!-- <draggable v-model="myArray" ghost-class="ghost" @end="onEnd">
             <transition-group type="transition" name="flip-list">
                 <div class="sortable" :id="element.id" v-for="element in myArray" :key="element.id">
                     <strong>{{element.name}}</strong>
@@ -8,7 +8,7 @@
                 </div>
             </transition-group>
         </draggable> -->
-        <div class = "drop-zone"
+        <!-- <div class = "drop-zone"
             @drop = "onDrop($event,1)"
             @dragenter.prevent
             @dragover.prevent>
@@ -32,6 +32,32 @@
                 {{ item.title }}
             </div>
         </div>
+        <div class = "drop-zone"
+          @drop = "onDrop($event,3)"
+          @dragenter.prevent
+          @dragover.prevent>
+            <div v-for="item in getList(3)"
+            :key="item.id"
+             class="drag-el"
+             draggable="true"
+             @dragstart="startDrag($event, item)">
+                {{ item.title }}
+            </div>
+        </div> -->
+        <!-- <div class = "drop-zone"
+          @drop = "onDrop($event, 3)"
+          @dragenter.prevent
+          @dragover.prevent
+          v-for="(x, index) in days" :key="x.item">
+            <div v-for="item in getList(index)"
+            :key="item.id"
+             class="drag-el"
+             draggable="true"
+             @dragstart="startDrag($event, item)">
+                {{ item.title }}
+            </div>
+        </div> -->
+
     </div>
 </template>
 
@@ -69,11 +95,21 @@ export default {
     return {
       getList,
       startDrag,
-      onDrop
+      onDrop,
+      drag: false
     }
   },
   data() {
     return {
+      days: [
+        { day: 'Monday' },
+        { day: 'Tuesday' },
+        { day: 'Wednesday' },
+        { day: 'Thursday' },
+        { day: 'Friday' },
+        { day: 'Saturday' },
+        { day: 'Sunday' }
+      ],
       myArray: [
         { name: 'Angular', id: 0 },
         { name: 'Angular2', id: 1 },
@@ -93,7 +129,8 @@ export default {
       this.newIndex = evt.newIndex
     }
   }
-  // components: {
+  // ,components: {
+  //   diet,
   //   draggable
   // }
 }
