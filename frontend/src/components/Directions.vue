@@ -29,9 +29,9 @@ export default {
     return {
       ingredients: [
         { item: ['In a medium bowl, combine soy sauce, lime juice, 1 tablespoon canola oil, garlic, chili powder, cumin and oregano', '1'], status: false },
-        { item: ['Skirt steak', '1 1/2 pounds'], status: false },
-        { item: ['Reduced sodium soy sauce', '2 Tbsp'], status: false },
-        { item: ['Freshly squeezed lemon juice', '2 Tbsp'], status: false }
+        { item: ['Heat a large skillet over medium-high heat. Crumble ground beef into the hot skillet. Cook and stir until the beef is completely browned, 7 to 10 minutes. Drain and discard any excess grease.'], status: false },
+        { item: ['Return ground beef to heat. Pour seasoning mixture and water over the beef; stir to combine. Bring to a simmer and cook until the moisture absorbs into the meat, about 5 minutes.'], status: false },
+        { item: ['Enjoy!'], status: false }
       ],
       idcount: 0
     }

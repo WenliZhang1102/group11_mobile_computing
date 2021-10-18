@@ -14,6 +14,9 @@
           <b-nav-item :active="status2==='active11'" v-on:click="status2='active11'">Ingredients</b-nav-item>
           <b-nav-item :active="status2==='active22'" v-on:click="status2='active22'">Directions</b-nav-item>
         </b-nav>
+
+        <div class="space"></div>
+
         <ingredients v-if="status2 === 'active11'"></ingredients>
         <directions v-if="status2 === 'active22'"></directions>
       </b-collapse>
@@ -60,5 +63,10 @@ export default {
 .tab {
     background-color:brown;
     height: 150px;
+}
+
+.space{
+    height:40px;
+    width: 100%;
 }
 </style>
