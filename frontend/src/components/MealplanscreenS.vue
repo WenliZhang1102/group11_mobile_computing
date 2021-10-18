@@ -11,10 +11,11 @@
         </b-card-body>
         <p>asd</p>
         <b-nav tabs align="center">
-                <b-nav-item :active="status==='active1'" v-on:click="status='active1'">Ingredients</b-nav-item>
-                <b-nav-item :active="status==='active2'" v-on:click="status='active2'">Directions</b-nav-item>
-            </b-nav>
-            <ingredients v-if="status === 'active1'"></ingredients>
+          <b-nav-item :active="status2==='active11'" v-on:click="status2='active11'">Ingredients</b-nav-item>
+          <b-nav-item :active="status2==='active22'" v-on:click="status2='active22'">Directions</b-nav-item>
+        </b-nav>
+        <ingredients v-if="status2 === 'active11'"></ingredients>
+        <directions v-if="status2 === 'active22'"></directions>
       </b-collapse>
     </b-card>
 
@@ -33,17 +34,19 @@
 
 <script>
 import ingredients from '@/components/Ingredients'
+import directions from '@/components/Directions'
 
 export default {
   components: {
-    ingredients
+    ingredients,
+    directions
   },
   data() {
     return {
       text: `
           Anim pariatur cliche
         `,
-      status: 'active1'
+      status2: 'active22'
     }
   }
 }

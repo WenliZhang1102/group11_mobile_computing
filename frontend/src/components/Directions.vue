@@ -12,12 +12,13 @@
                     <label :class="{ 'is-selected': x.status }">{{x.item[0]}}
                     </label>
                     </b-col>
-                  <b-col cols="2">{{x.item[1]}}</b-col>
+                  <b-col cols="2">
+                      <div class="numberCircle">{{index+1}}</div>
+                  </b-col>
                 <div class="line"></div>
                 <hr class="line"/>
             </b-row>
         </b-container>
-
     </div>
 </template>
 <script>
@@ -27,17 +28,10 @@ export default {
   data() {
     return {
       ingredients: [
-        { item: ['Lime', '1'], status: false },
+        { item: ['In a medium bowl, combine soy sauce, lime juice, 1 tablespoon canola oil, garlic, chili powder, cumin and oregano', '1'], status: false },
         { item: ['Skirt steak', '1 1/2 pounds'], status: false },
         { item: ['Reduced sodium soy sauce', '2 Tbsp'], status: false },
-        { item: ['Freshly squeezed lemon juice', '2 Tbsp'], status: false },
-        { item: ['Canola oil', '3 Cloves'], status: false },
-        { item: ['Garlic', '2 Tbsp'], status: false },
-        { item: ['Ground Cumin', '1 Tbsp'], status: false },
-        { item: ['Dried Oregano', '1 Tbsp'], status: false },
-        { item: ['Mini Tortillas', '12'], status: false },
-        { item: ['Diced red onion', '3/4 Cup'], status: false },
-        { item: ['Chopped fresh cilantro leaves', '1/2 Cup'], status: false }
+        { item: ['Freshly squeezed lemon juice', '2 Tbsp'], status: false }
       ],
       idcount: 0
     }
@@ -58,5 +52,19 @@ b-form-checkbox {
 
 .is-selected label {
     text-decoration: line-through;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+
+    font: 17px Arial, sans-serif;
 }
 </style>
