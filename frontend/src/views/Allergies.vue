@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h2>DO YOU HAVE ANY ALLERGIES?</h2>
+        <h2 id='h2'>DO YOU HAVE ANY ALLERGIES?</h2>
         <footery></footery>
-            <b-form-group
+            <b-form-group id='h22'
             label="We want to know about your food allergies so we can customize your meal plan"
             v-slot="{ ariaDescribedby }"
             >
@@ -51,3 +51,14 @@ export default {
 }
 
 </script>
+
+<style>
+#h2 {
+  color: #FD5523;
+  padding: 20px;
+}
+
+#h22{
+   color: #FD5523; 
+}
+</style>

@@ -1,24 +1,8 @@
 <template>
   <div class="test">
-    <!-- <b-jumbotron header="Welcome to Mobile Computing Frontend" lead="Welcome to Your Frontend Vue.js App">
-      <p>Message from the server: {{ message }}</p>
-      <b-button variant="primary" href="/camels">List Camels</b-button>
-    </b-jumbotron>
-    <b-container>
-      <b-row>
-        <b-col><h1>Responsive BootstrapVue: <a href="https://bootstrap-vue.js.org/docs/components/layout/">Layout and Grid System</a></h1></b-col>
-      </b-row>
-      <b-row>
-        <b-col class="example-col" cols="6" md="4">Message from the server</b-col>
-        <b-col class="example-col" cols="12" md="8">{{ message }}</b-col>
-      </b-row>
-      <div>
-        </div>
-    </b-container> -->
-    <h2>WHAT INGREDIENTS DO YOU HAVE AT HOME?</h2>
-    <b-card-text class="heading">My ingredients</b-card-text>
-    <div class="accordion" role="tablist">
-    <b-card no-body class="mb-1">
+    <b-form class="form">
+    <h2 id="h2">WHAT INGREDIENTS DO YOU HAVE AT HOME?</h2>
+    <h4 id="h4">My ingredients</h4>
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block v-b-toggle.accordion-1 variant="info">Pantry</b-button>
       </b-card-header>
@@ -30,13 +14,10 @@
             <b-form-checkbox id="cb1-2">Pepper</b-form-checkbox>
             <b-form-checkbox id="cb1-3">Oregano</b-form-checkbox>
             <b-form-checkbox id="cb1-4">Pasta</b-form-checkbox>
-            <!--<checkbox :checkbox-number="checkbox2" item="pepper"></checkbox> Doesnt work??-->
           </div>
         </b-card-body>
       </b-collapse>
-    </b-card>
 
-    <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block v-b-toggle.accordion-2 variant="info">Eggs and Dairy</b-button>
       </b-card-header>
@@ -51,9 +32,7 @@
           </div>
         </b-card-body>
       </b-collapse>
-    </b-card>
 
-    <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block v-b-toggle.accordion-3 variant="info">Fruits and Vegetables</b-button>
       </b-card-header>
@@ -69,9 +48,7 @@
           </div>
         </b-card-body>
       </b-collapse>
-    </b-card>
 
-    <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block v-b-toggle.accordion-4 variant="info">Bread and Bakery</b-button>
       </b-card-header>
@@ -87,9 +64,7 @@
           </div>
         </b-card-body>
       </b-collapse>
-    </b-card>
 
-    <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block v-b-toggle.accordion-5 variant="info">Frozen</b-button>
       </b-card-header>
@@ -104,9 +79,7 @@
           </div>
         </b-card-body>
       </b-collapse>
-    </b-card>
 
-    <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block v-b-toggle.accordion-6 variant="info">Beverages</b-button>
       </b-card-header>
@@ -119,27 +92,17 @@
           </div>
         </b-card-body>
       </b-collapse>
-    </b-card>
 
-    <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block v-b-toggle.accordion-7 variant="info">Other</b-button>
       </b-card-header>
-      <b-collapse id="accordion-7" accordion="my-accordion" role="tabpanel">
-        <b-card-body>
-          <b-card-text>{{ text }}</b-card-text>
-        </b-card-body>
-      </b-collapse>
-    </b-card>
 
     <b-row class="my-1">
-    <b-col sm="2">
-      <label for="input-small"></label>
-    </b-col>
     <b-col sm="10">
       <b-form-input id="input-small" size="sm" placeholder="Add ingredient"></b-form-input>
     </b-col>
   </b-row>
+  </b-form>
     <div id="footer">
       <b-container class="bv-example-row text-center">
         <b-row>
@@ -162,10 +125,10 @@
       </b-container>
     </div>
   </div>
-  </div>
 </template>
 
-<script>
+
+<script scoped>
 // @ is an alias to /src
 import Switch from '@/components/Switch.vue'
 import Checkbox from '@/components/Checkbox.vue'
@@ -200,17 +163,19 @@ export default {
 </script>
 
 <style>
+
+.test{
+  background-color: #FEFCD5;
+}
+
 .sample{
   background-color: #383725;
 }
-
 .example-col {
   padding-top: .75rem;
   padding-bottom: .75rem;
-  background-color: #FEFCD5;
   border: 2px solid lightgray;
 }
-
 #footer {
   position: fixed;
   padding: 10px 10px 0px 10px;
@@ -220,7 +185,6 @@ export default {
   height: 80px;
   background: #34344A;
 }
-
 .arrow {
     margin-top: 10px;
     width:40px;
@@ -228,7 +192,6 @@ export default {
     filter: invert(94%) sepia(9%) saturate(818%) hue-rotate(359deg) brightness(108%) contrast(103%);
     transform: rotate(180deg);
 }
-
 .dot {
     height: 15px;
     width: 15px;
@@ -237,7 +200,6 @@ export default {
     display: inline-block;
     margin-left: 20px;
 }
-
 .footerelem {
   margin-top:20px;
 }
@@ -254,6 +216,66 @@ export default {
   border-radius: 32px;
   font-weight: bold;
   width: 100px;
+}
+
+#h2 {
+  color: #FD5523;
+}
+
+#h4 {
+  color: #00A676;
+  text-align-last: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.form {
+  max-width: 450px;
+  margin: 0px auto;
+  text-align: middle;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.custom-control-label:before{
+  background-color:#FD5523;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color: #FD5523;
+  border: none;
+}
+
+.custom-radio .custom-control-input:focus~.custom-control-label::before{
+    box-shadow: 0 0 0 black, 0 0 0 rgba(255, 0, 247, 0.25);
+}
+
+.custom-checkbox {
+  text-align: left;
+  color: #00A676;
+  outline: none;
+  text-size-adjust: 20px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+    box-shadow: 0 0 0 red, 0 0 0 rgba(255, 0, 247, 0.25);
+}
+
+#input-small {
+  text-align: left;
+  background: #C2F9C4;
+  border-radius: 10px;
+  color: #00A676;
+  align-self: center;
+}
+.btn {
+  background-color: #FEFCD5 !important;
+  color: #00A676 !important;
+  border: none !important;
+}
+.btn :hover {
+  border: none !important;
 }
 
 </style>

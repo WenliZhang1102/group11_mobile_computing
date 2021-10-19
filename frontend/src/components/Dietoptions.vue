@@ -45,5 +45,10 @@ export default {
 .header {
     width: 100%;
     text-align: center;
+    color: #FD5523;
+}
+
+.bv-example-row{
+    color: #00A676;
 }
 </style>

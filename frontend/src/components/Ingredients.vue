@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class='ingredients'>
         <b-container class="bv-example-row">
             <b-row class="text-left"
              v-for="(x, index ) in ingredients" :key="x.item">
