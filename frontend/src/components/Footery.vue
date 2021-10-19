@@ -1,7 +1,6 @@
-
 <template>
     <div>
-        <p>lmao</p>
+        <p v-if="screen='diet'">test</p>
         <div id="footer">
             <b-container class="bv-example-row text-center">
                 <b-row>
@@ -29,10 +28,14 @@
 <script>
 
 export default {
-  name: 'footer',
+  name: 'footery',
   data() {
     return {
+      sample: 'asd'
     }
+  },
+  props: {
+    screen: String
   }
 }
 </script>

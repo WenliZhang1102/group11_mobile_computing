@@ -7,12 +7,18 @@
         <b-form-radio name="radio-size" size="sm">Paleo</b-form-radio>
         <b-form-radio name="radio-size" size="sm">Keto</b-form-radio>
         <b-form-radio name="radio-size" size="sm">Vegan</b-form-radio>
+        <footery></footery>
     </div>
 </template>
 
 <script>
+import footery from '@/components/Footery'
+
 export default {
   name: 'diet',
+  components: {
+    footery
+  },
   data() {
     return {
       message: ''

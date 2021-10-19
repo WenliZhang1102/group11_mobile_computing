@@ -17,6 +17,7 @@
         <grocerylist v-if="status === 'active2'"></grocerylist>
 
         <preferences v-if="status === 'active3'"></preferences>
+        <footery screen="mealplan"></footery>
     </div>
 </template>
 
@@ -25,13 +26,15 @@
 import grocerylist from '@/components/Grocerylist'
 import preferences from '@/components/Preferences'
 import mealplanscreens from '@/components/MealplanscreenS'
+import footery from '@/components/Footery'
 
 export default {
   components: {
     // mealplanscreen,
     grocerylist,
     preferences,
-    mealplanscreens
+    mealplanscreens,
+    footery
   },
   name: 'mealplan',
   data() {
