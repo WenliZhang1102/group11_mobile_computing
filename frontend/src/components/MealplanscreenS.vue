@@ -6,10 +6,10 @@
       </b-card-header>
       <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
         <b-card-body>
-          <b-card-text>I start opened because <code>visible</code> is <code>true</code></b-card-text>
-          <b-card-text>{{ text }}</b-card-text>
+          <!-- <b-card-text>I start opened because <code>visible</code> is <code>true</code></b-card-text>
+          <b-card-text>{{ text }}</b-card-text> -->
+          <mealoverview></mealoverview>
         </b-card-body>
-        <p>asd</p>
         <b-nav tabs align="center">
           <b-nav-item :active="status2==='active11'" v-on:click="status2='active11'">Ingredients</b-nav-item>
           <b-nav-item :active="status2==='active22'" v-on:click="status2='active22'">Directions</b-nav-item>
@@ -38,11 +38,13 @@
 <script>
 import ingredients from '@/components/Ingredients'
 import directions from '@/components/Directions'
+import mealoverview from '@/components/Mealoverview'
 
 export default {
   components: {
     ingredients,
-    directions
+    directions,
+    mealoverview
   },
   data() {
     return {
