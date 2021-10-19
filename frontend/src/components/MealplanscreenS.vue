@@ -1,6 +1,6 @@
 <template>
   <div class="accordion" role="tablist">
-    <b-card no-body class="mb-1">
+
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block v-b-toggle.accordion-1 variant="info" class="tab">TACOS</b-button>
       </b-card-header>
@@ -20,9 +20,11 @@
         <ingredients v-if="status2 === 'active11'"></ingredients>
         <directions v-if="status2 === 'active22'"></directions>
       </b-collapse>
-    </b-card>
 
+
+<!--
     <b-card no-body class="mb-1">
+      -->
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block v-b-toggle.accordion-2 variant="info">Accordion 2</b-button>
       </b-card-header>
@@ -31,7 +33,9 @@
           <b-card-text>{{ text }}</b-card-text>
         </b-card-body>
       </b-collapse>
+      <!--
     </b-card>
+    -->
   </div>
 </template>
 
@@ -70,5 +74,9 @@ export default {
 .space{
     height:40px;
     width: 100%;
+}
+
+.btn{
+  height: 30px;
 }
 </style>

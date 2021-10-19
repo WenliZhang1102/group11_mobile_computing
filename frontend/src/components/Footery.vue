@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p v-if="screen='diet'">test</p>
+        <p v-if="screen='diet'"></p>
         <div id="footer">
             <b-container class="bv-example-row text-center">
                 <b-row>
@@ -72,8 +72,8 @@ export default {
 }
 
 .dot {
-    height: 15px;
-    width: 15px;
+    height: 5px;
+    width: 5px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -83,6 +83,7 @@ export default {
 .footerelem {
   margin-top:20px;
 }
+
 .button {
   background-color: #00A676;
   border: none;

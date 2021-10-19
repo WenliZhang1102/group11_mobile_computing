@@ -3,7 +3,7 @@
         <div>
             <!-- <b-img center src="https://picsum.photos/125/125/?image=58" alt="Center image"></b-img> -->
             <img class="image" center src="@/assets/tacoswide.png" alt="Center image">
-            <h1 style="margin-top: 1">TACOS</h1>
+            <h1 id='title' style="margin-top: 1">TACOS</h1>
             <div class="main-container">
                 <div class="content">
                     <table>
@@ -66,6 +66,10 @@ export default {
 
 <style scoped>
 
+.title{
+    color:#FD5523;
+}
+
 .image {
     width: 100%;
     max-width: 400px;
@@ -86,5 +90,9 @@ p {
     border-left: 2px solid #000;
     height:60px;
     opacity: 20%;
+}
+
+.content {
+     color: #00A676;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>WHAT ALLERGIES DO YOU HAVE?</h3>
+        <h3 id='title'>WHAT ALLERGIES DO YOU HAVE?</h3>
         <b-button-group size="sm">
             <b-button
                 v-for="(btn, idx) in buttons"
@@ -11,7 +11,7 @@
                 {{ btn.caption }}
             </b-button>
         </b-button-group>
-        <p>+Add allergy</p>
+        <p id='add_allegy'>+Add allergy</p>
     </div>
 </template>
 
@@ -37,3 +37,23 @@ export default {
   }
 }
 </script>
+
+<style scope>
+.title{
+  color: #FD5523;
+}
+
+#add_allegy{
+  color:#FD5523;
+}
+
+.btn {
+  background-color: #FEFCD5 !important;
+  color: #00A676 !important;
+  border-color: #FD5523 !important;
+}
+
+.btn :hover {
+  border: none !important;
+}
+</style>
