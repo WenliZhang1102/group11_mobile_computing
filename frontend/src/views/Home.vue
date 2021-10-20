@@ -127,7 +127,6 @@
   </div>
 </template>
 
-
 <script scoped>
 // @ is an alias to /src
 import Switch from '@/components/Switch.vue'

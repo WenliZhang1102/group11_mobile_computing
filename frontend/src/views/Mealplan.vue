@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2 id='title'>CUSTOMIZE YOUR MEAL PLAN</h2>
-        <div> 
+        <div>
             <b-nav tabs align="center">
                 <b-nav-item :active="status==='active1'" v-on:click="status='active1'">Meal plan</b-nav-item>
                 <b-nav-item :active="status==='active2'" v-on:click="status='active2'">Grocery list</b-nav-item>
